@@ -5,10 +5,16 @@
 
 function pigatize(str) {
   vowel = /^[aeiou]/i;
+  consonant = /^[^aeiou]/i
 
   if (vowel.test(str)) {
     return str += "way";
-  }
+  };
+
+  if (consonant.test(str)) {
+    return str.slice(1,str.length) + str[0] + 'ay';
+  };
 };
 
 console.log(pigatize('apple'));
+console.log(pigatize('cat'));
