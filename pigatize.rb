@@ -2,7 +2,11 @@
 # If the first letter is a vowel, add "way" to the end
 # If the first letter is a consonant, move it to the end and add "ay"
 
-
+def pigatize(text)
+  if text[0].match(/^[aeiou]/i)
+    text +"way"
+  end
+end
 
 
 
