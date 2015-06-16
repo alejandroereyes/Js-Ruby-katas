@@ -4,7 +4,9 @@
 
 def pigatize(text)
   if text[0].match(/^[aeiou]/i)
-    text +"way"
+    text + "way"
+  else
+    text[1..-1] + text[0] + "ay"
   end
 end
 
