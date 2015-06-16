@@ -4,8 +4,8 @@
 // Hint: Use regex
 
 function pigatize(str) {
-  vowel = /^[aeiou]/i;
-  consonant = /^[^aeiou]/i;
+  var vowel = /^[aeiou]/i;
+  var consonant = /^[^aeiou]/i;
 
   if (vowel.test(str)) {
     return str += "way";
