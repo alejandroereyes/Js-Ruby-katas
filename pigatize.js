@@ -5,7 +5,7 @@
 
 function pigatize(str) {
   vowel = /^[aeiou]/i;
-  consonant = /^[^aeiou]/i
+  consonant = /^[^aeiou]/i;
 
   if (vowel.test(str)) {
     return str += "way";
