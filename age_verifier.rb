@@ -1,10 +1,20 @@
 def verify(age)
-  if age < 21
-    puts "Too Young"
+  if age.class == Array
+    age.each do |num|
+      if num < 21
+        puts "Too Young"
+      else
+        puts "Proceed"
+      end
+    end
   else
-    puts "Proceed"
+    if age < 21
+      puts "Too Young"
+    else
+      puts "Proceed"
+    end
   end
 end
 
-verify(19)
+verify([19, 16, 9])
 verify(25)
